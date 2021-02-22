@@ -194,6 +194,15 @@ main .container {
   width: 1200px;
   margin: 0 auto;
 }
+main .bgblue {
+  background-color: #3C1567;
+}
+main .bgcolordarkgrey {
+  background: #3c3c3c;
+}
+main .bgbcel {
+  background-color: #0072bc;
+}
 main .more {
   padding-top: 50px;
 }
@@ -225,9 +234,69 @@ main .more .content .box .information-box {
   justify-content: space-between;
   align-items: none;
   flex-direction: column;
-  height: 100px;
-  padding: 10px;
+  height: 150px;
+  padding: 15px;
   background-color: white;
   width: 100%;
   font-size: 15px;
+}
+main .spot {
+  padding-top: 50px;
+}
+main .spot .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .spot .content .box {
+  flex-basis: calc(100% / 2);
+  height: 325px;
+  color: white;
+  position: relative;
+}
+main .spot .content .box img {
+  width: 80%;
+}
+main .spot .content .box .information {
+  padding: 50px 35px 0;
+}
+main .spot .content .box .information h2 {
+  font-size: 25px;
+}
+main .spot .content .box .information span {
+  margin: 24px 0;
+  display: block;
+  font-size: 18px;
+}
+main .spot .content .box .information button {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: black;
+  outline: none;
+  border: none;
+  background-color: white;
+  font-weight: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+main .spot .content .box .artist {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #E0DBD6;
+  left: 20px;
+  bottom: 20px;
+}
+main .spot .content .bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .spot .content .bg.wacom {
+  background-image: url("https://www.painterartist.com/static/ptr/images/home/wacom-painter.jpg");
+}
+main .spot .content .bg.paiter {
+  background-image: url("https://www.painterartist.com/static/ptr/images/home/painter-master.jpg");
+}
+main .spot .content .bg.business {
+  background-image: url("https://www.painterartist.com/static/ptr/images/home/business-education.jpg");
 }

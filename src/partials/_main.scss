@@ -1,6 +1,14 @@
 main{
     @include container2;
-    
+    .bgblue{
+        background-color: #3C1567;
+    }
+    .bgcolordarkgrey{
+        background: #3c3c3c;
+    }
+    .bgbcel{
+        background-color: #0072bc;
+    }
     background-color: #E8E8E8;
     .more{
         padding-top: 50px;
@@ -31,8 +39,8 @@ main{
             .information-box{
                 @include flex(space-between,none);
                 flex-direction:column;
-                height: 100px;
-                padding: 10px;
+                height: 150px;
+                padding: 15px;
                 background-color: white;
                 width: 100%;
                 font-size: 15px;
@@ -43,6 +51,57 @@ main{
       
         
 
+    }
+    .spot{
+        padding-top: 50px;
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            .box{
+                flex-basis: calc(100% / 2);
+                height: 325px;
+               color: white;
+               position: relative;
+                img{
+                    width: 80%;
+                   
+                }
+
+                .information{
+                    padding: 50px 35px 0;
+                     h2{
+                         font-size: 25px;
+                     }
+                     span{
+                        margin: 24px 0;
+                        display: block;
+                        font-size: 18px
+                     }
+                     button{
+                        @include button(white,black,none ,10px 20px,none);
+                     }
+                    
+                } 
+                .artist{
+                         @include artist;
+                         left: 20px;
+                         bottom: 20px;
+                     }
+            }
+            .bg{
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .bg.wacom{
+                background-image: url("https://www.painterartist.com/static/ptr/images/home/wacom-painter.jpg");
+            }
+            .bg.paiter{
+                background-image: url("https://www.painterartist.com/static/ptr/images/home/painter-master.jpg");
+            }
+            .bg.business{
+                background-image: url("https://www.painterartist.com/static/ptr/images/home/business-education.jpg");
+            }
+        }
     }
 
 

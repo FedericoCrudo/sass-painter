@@ -16,15 +16,21 @@
   align-items: $align;
 
 }
-@mixin button($bgcolor:black,$color:white,$border:none) {
+@mixin button($bgcolor:black,$color:white,$border:none,$padding:15px 25px, $weight:bold) {
   font-size: 18px;
   text-transform: uppercase;
-  padding: 15px 25px;
+  padding: $padding;
   color: $color;
   outline: none;
   border: $border;
   background-color:$bgcolor;
-  font-weight: bold;
+  font-weight: $weight;
   margin-right: 20px;
   cursor: pointer;
+}
+@mixin artist {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #E0DBD6;
 }
