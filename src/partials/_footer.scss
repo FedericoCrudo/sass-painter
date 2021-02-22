@@ -1,0 +1,29 @@
+footer{
+    background-color: #ECECEC;
+    @include container2;
+    .content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 60px;
+        ul{
+            margin-right: 120px;
+           li{
+               padding:4px 0;
+               
+               a{
+                   color: $textcolor;
+                   &:hover{
+                       text-decoration: underline;}
+
+                   
+               }
+           } 
+           span{
+               display: block;
+                margin-bottom: 10px;
+                font-size: 18px;
+               }
+        }
+    }
+}
