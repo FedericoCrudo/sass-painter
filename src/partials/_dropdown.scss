@@ -1,0 +1,24 @@
+li.parent-dropdown{
+  position: relative;
+ z-index: 10;
+  .dropdown{
+    position: absolute;
+    top:$altezzaHeaderBottom;
+    left:0;
+    width: 250px;
+    background-color: $colorWhite;
+    display: none;
+      li{
+        width: 100%;
+        &:hover{
+          background-color: $colorHover;
+        }
+      }
+  }
+ &:hover .dropdown{
+       @include flex(none,flex-start);
+      flex-direction: column;
+    }  
+    
+
+}

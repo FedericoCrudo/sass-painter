@@ -1,0 +1,30 @@
+nav.navbar {
+  width: 85%;
+  margin-left: $margin-left;
+
+  ul {
+    @include flex(space-between);
+    width: 100%;
+    li {
+      height: 100%;
+      padding: $padding-19;
+      
+      a {
+        color: $colorWhite;
+       i{
+         padding-left: 5px;
+       }
+      }
+      i{
+        color: $grigio;
+      }
+      &:hover {
+        background-color:$colorWhite;
+
+        a {
+          color: $colorBlack;
+        }
+      }
+    }
+  }
+}

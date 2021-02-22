@@ -1,0 +1,49 @@
+header {
+
+  background-color: $colorBlack;
+  // .container{
+  //   @include container;
+  // }
+  @include container2;
+  .#{&}-top{
+    height: $altezzaHeaderTop;
+
+    nav{
+      @include flex(flex-end);
+      height: 100%;
+      font-size: 12px;
+      ul {
+        @include flex();
+
+        li {
+          padding-right: $margin-left-30;
+
+          a {
+            color: $navTop;
+            padding-left: 5px;
+            
+            &:hover {
+              color: $colorWhite;
+              text-decoration: underline;
+             
+            }
+          }
+          i{
+            color: $coloricon;
+           
+          }
+        }
+
+      }
+    }
+
+  }
+  .#{&}-bottom {
+    height: $altezzaHeaderBottom;
+    @include flex();
+    .logo img {
+     height: 100%;
+   
+    }
+  }
+}

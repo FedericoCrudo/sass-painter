@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #000;
+}
+header .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+header .header-top {
+  height: 45px;
+}
+header .header-top nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  font-size: 12px;
+}
+header .header-top nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .header-top nav ul li {
+  padding-right: 30px;
+}
+header .header-top nav ul li a {
+  color: #989898;
+  padding-left: 5px;
+}
+header .header-top nav ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+header .header-top nav ul li i {
+  color: #009CFF;
+}
+header .header-bottom {
+  height: calc(100px - 45px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .header-bottom .logo img {
+  height: 100%;
+}
+
+nav.navbar {
+  width: 85%;
+  margin-left: 20px;
+}
+nav.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+nav.navbar ul li {
+  height: 100%;
+  padding: 19px;
+}
+nav.navbar ul li a {
+  color: #fff;
+}
+nav.navbar ul li a i {
+  padding-left: 5px;
+}
+nav.navbar ul li i {
+  color: grey;
+}
+nav.navbar ul li:hover {
+  background-color: #fff;
+}
+nav.navbar ul li:hover a {
+  color: #000;
+}
+
+li.parent-dropdown {
+  position: relative;
+  z-index: 10;
+}
+li.parent-dropdown .dropdown {
+  position: absolute;
+  top: calc(100px - 45px);
+  left: 0;
+  width: 250px;
+  background-color: #fff;
+  display: none;
+}
+li.parent-dropdown .dropdown li {
+  width: 100%;
+}
+li.parent-dropdown .dropdown li:hover {
+  background-color: #E6E6E6;
+}
+li.parent-dropdown:hover .dropdown {
+  display: flex;
+  justify-content: none;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.jumbotron {
+  background-image: url("https://www.painterartist.com/static/ptr/images/home/bg-painter-home.jpg");
+  height: 500px;
+  background-size: cover;
+  z-index: 1;
+  background-position: center;
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  position: relative;
+}
+.jumbotron .information-jumbotron {
+  width: 550px;
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  flex-direction: column;
+}
+.jumbotron .information-jumbotron > span {
+  font-size: 22px;
+  margin-top: 20px;
+}
+.jumbotron .information-jumbotron .offers {
+  margin: 30px 0;
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  flex-direction: column;
+  color: #C70EB9;
+  font-style: italic;
+  font-size: 18px;
+}
+.jumbotron .information-jumbotron .offers span:first-of-type {
+  font-weight: bold;
+}
+.jumbotron .information-jumbotron img {
+  width: 250px;
+}
+.jumbotron .information-jumbotron .button .btn-normal {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: black;
+  font-weight: bold;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.jumbotron .information-jumbotron .button .btn-trasparent {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  color: black;
+  outline: none;
+  border: 1px solid black;
+  background-color: transparent;
+  font-weight: bold;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.jumbotron .artist {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #E0DBD6;
+}
+
+main {
+  background-color: #E8E8E8;
+}
+main .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+main .more {
+  padding-top: 50px;
+}
+main .more h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333333;
+  font-weight: 400;
+}
+main .more .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+}
+main .more .content .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: calc(100% / 3 - 19px);
+}
+main .more .content .box .img img {
+  width: 100%;
+  height: 100%;
+}
+main .more .content .box .information-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+  height: 100px;
+  padding: 10px;
+  background-color: white;
+  width: 100%;
+  font-size: 15px;
+}

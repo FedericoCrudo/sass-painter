@@ -1,0 +1,30 @@
+// @mixin container {
+//   width: $larghezzaDesktop;
+//   margin: 0 auto;
+//   background-color: green;
+// }
+@mixin container2 {
+  .container {
+    width: $larghezzaDesktop;
+    margin: 0 auto;
+  }
+}
+
+@mixin flex($justify:flex-start, $align:center){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+
+}
+@mixin button($bgcolor:black,$color:white,$border:none) {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  color: $color;
+  outline: none;
+  border: $border;
+  background-color:$bgcolor;
+  font-weight: bold;
+  margin-right: 20px;
+  cursor: pointer;
+}
