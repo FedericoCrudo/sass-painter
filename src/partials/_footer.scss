@@ -2,28 +2,98 @@ footer{
     background-color: #ECECEC;
     @include container2;
     .content{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
         padding-top: 60px;
-        ul{
-            margin-right: 120px;
-           li{
-               padding:4px 0;
-               
-               a{
-                   color: $textcolor;
-                   &:hover{
-                       text-decoration: underline;}
-
-                   
-               }
-           } 
-           span{
-               display: block;
-                margin-bottom: 10px;
-                font-size: 18px;
-               }
+        .footer-top{
+            .top{
+                display: flex;
+                justify-content: space-between;
+                ul{
+                    margin-right: 120px;
+                    li{
+                    padding:4px 0;
+                        a{
+                            color: $textcolor;
+                            &:hover{
+                            text-decoration: underline;
+                            }
+                        }
+                    } 
+                    span{
+                    display: block;
+                        margin-bottom: 10px;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .bottom-icon{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin: 40px 0;
+                font-size: 35px;
+                i{
+                    padding-right: 20px;
+                }
+            }
+        }
+      
+        
+    }
+    .footer-bottom{
+        width: 100%;
+        padding-bottom: 20px;
+        background-color: #1E1E1E;
+        .wrapp{
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logos{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-left: 20px;
+                }
+            }
+            .info{
+                ul{
+                    display: flex;
+                    li{
+                        margin-right:20px ;
+                       a{
+                        color: #999;
+                            &:hover{
+                                color: white;
+                                text-decoration: underline;
+                            }
+        
+                       }
+                       &:last-of-type{
+                            a{
+                                color: white;
+                                &:hover{
+                                    text-decoration: none;
+                                }
+                            }
+                       }
+                    }
+                }
+            }
         }
     }
+}
+.inst{
+    color: #E4405F;
+}
+.fb{
+    color: #3B5998;
+}
+.tw{
+    color: $coloricon;
+}
+.yt{
+    color: #CD201F;
+}
+.pt{
+    color: red;
 }
